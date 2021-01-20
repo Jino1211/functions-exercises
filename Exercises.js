@@ -10,14 +10,23 @@ function myReverse(str) {
 }
 myReverse('yehonatan');
 
+
 //Question 2
+
 function allCombinations(str) {
   let combinations = [];
   // your code here
-
-  //
+  for (let i = 0; i < str.length; i++) {
+    combinations.push(str[i]);
+    for (let j = i+1; j < str.length; j++) {
+      let cut = str.slice(i,j+1);
+      combinations.push(cut);
+    }
+  }
+  console.log(combinations);
   return combinations;
 }
+allCombinations('dogolo');
 
 //Question 3
 function allCaps(str) {
