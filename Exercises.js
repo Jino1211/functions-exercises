@@ -28,26 +28,11 @@ function allCombinations(str) {
 }
 allCombinations('dogolo');
 
-
 //Question 3
 function allCaps(str) {
-  let firstLetter = str[0];
-  let capitalLetter = firstLetter.toUpperCase();
-  let newStr = capitalLetter;
-  for (let i = 0; i < str.length-1; i++) {
-      if (str[i] === ' ') {
-         firstLetter = str[i+1];
-         capitalLetter = firstLetter.toUpperCase();
-         newStr += ' ' + capitalLetter;
-      } else {
-        newStr += str[i+1];
-      }
-    }
   // your code here
-  console.log(newStr);
-  return newStr;
+  return "";
 }
-allCaps ('hii my name is mose');
 
 //Question 4
 function myPower(x, n) {
