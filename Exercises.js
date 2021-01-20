@@ -52,8 +52,14 @@ function allCaps(str) {
 //Question 4
 function myPower(x, n) {
   // your code here
-  return "";
+  let sum = 1;
+  for (let i = 0; i < n; i++) {
+    sum *= x;
+  }
+  console.log(sum);
+  return sum;
 }
+myPower(2,5);
 
 //Question 5
 function getFirstNotRepeating(str) {
