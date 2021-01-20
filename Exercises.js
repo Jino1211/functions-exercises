@@ -65,21 +65,21 @@ myPower(2,5);
 //Question 5
 function getFirstNotRepeating(str) {
   // your code here
-  let j;
-  let bool = false;
-  for (let i = 0; i < str.length; i++) {
-    for (let j = i+1; j < str.length; j++) {
+  for (let i = 0; i < str.length ; i++) {
+    let counter = 0;
+    for (let j = 0; j < str.length; j++) {
       if (str[i] === str[j]) {
-        bool = true;
-     }
+        counter++;
+      }
     }
-   if (!bool) {
-     console.log(str[i]);
-     return str[i];
+    if (counter === 1) {
+      console.log(str[i]);
+      return str[i];
+      break;
     }
   }
 }
-getFirstNotRepeating('nnchfjaab')
+getFirstNotRepeating('aardsr')
 
 
 //Question 6 (Bonus)
