@@ -1,8 +1,14 @@
 //Question 1
 function myReverse(str) {
   // your code here
-  return "";
+  let reverse = '';
+  for (let i = str.length-1; i >= 0; i-- ) {
+    reverse += str[i];
+  }
+  return reverse;
+  console.log(reverse);
 }
+myReverse('yehonatan');
 
 //Question 2
 function allCombinations(str) {
