@@ -31,8 +31,23 @@ allCombinations('dogolo');
 //Question 3
 function allCaps(str) {
   // your code here
-  return "";
-}
+
+  let firstLetter = str[0];
+  let capitalLetter = firstLetter.toUpperCase();
+  let newStr = capitalLetter;
+  for (let i = 0; i < str.length-1; i++) {
+      if (str[i] === ' ') {
+         firstLetter = str[i+1];
+         capitalLetter = firstLetter.toUpperCase();
+         newStr += ' ' + capitalLetter;
+      } else {
+        newStr += str[i+1];
+      }
+    }
+    return newStr;
+  }
+  allCaps ('hii my name is mose');
+
 
 //Question 4
 function myPower(x, n) {
